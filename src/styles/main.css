@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: "verdana";
+  font-weight: 700;
+}
+
+.App {
+  text-align: center;
+  color: rgb(134, 10, 134);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+.App h1 {
+  font-size: 18px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  width: 90%;
+  margin: 35px auto;
+  border: 1px solid grey;
+  box-shadow: 0 5px 10px black;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-items: right;
+  padding: 5px;
+}
+.App:hover {
+  transform: scale(1.01);
+}
+
+.header,
+.contact,
+.apropos,
+.portfolio,
+.cv,
+.contact {
+  flex: 1;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgb(134, 10, 134);
+  color: white;
+}
+.header .nav {
+  max-width: 600px;
+}
+.header .logo {
+  width: 120px;
+  padding: 15px 0;
+}
+.header ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.header ul li {
+  padding: 5px 0;
+}
+.header ul li a {
+  width: 120px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #b3b300;
+  margin: 0 5px;
+  color: rgb(134, 10, 134);
+  background-color: #cccc00;
+  transition: scale(1.03);
+}
+.header ul li a:hover {
+  background: #0000cc;
+  padding: 5px;
+  color: white;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+@media screen and (max-width: 320px) {
+  .header,
+.header ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.presentation {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.presentation_bloc {
+  text-align: justify;
+}
+.presentation h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.presentation .Typewriter {
+  margin-left: 5px;
+}
+.presentation_projets {
+  width: 100%;
+}
+.presentation_projets .p-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.presentation_projets-bloc {
+  width: 192px;
+  border: 1px solid rgb(134, 10, 134);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.presentation_projets-bloc:hover {
+  transform: scale(1.1);
+  background: rgb(134, 10, 134);
+  color: white;
+}
+.presentation_projets-bloc img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
