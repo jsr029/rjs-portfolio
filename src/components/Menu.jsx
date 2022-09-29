@@ -5,7 +5,10 @@ import Logo from './Logo'
 function Menu() {
     return (
         <>
+            <div className="logo-brand">
             <Logo />
+                <span>"Rester fluide, ouvert et prudent"</span>
+            </div>
             <nav className='nav'>
                 <ul>
                     <li>

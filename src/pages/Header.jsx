@@ -3,9 +3,9 @@ import Menu from '../components/Menu'
 
 function Header() {
   return (
-    <header className='header'>
-        <Menu />
-    </header>
+    <div className='header'>
+      <Menu />
+    </div>
   )
 }
 

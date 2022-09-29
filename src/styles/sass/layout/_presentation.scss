@@ -6,12 +6,19 @@
 
     &_bloc {
         text-align: justify;
+        p{
+            background: darken(yellow, 10%);
+            padding: 15px 5px;
+        }
     }
 
     h2 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        background: #aaafff;
+        padding: 5px 0;
+        color: white;
     }
 
     .Typewriter {
@@ -22,31 +29,38 @@
         width: 100%;
 
         .p-flex {
+            padding: 15px 0;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            background: darken(yellow, 10%);
 
         }
 
         &-bloc {
-            width: 192px;
+            width: 200px;
+            height: 380px;
             border: 1px solid rgb(134, 10, 134);
             padding: 5px;
             margin: 10px;
             border-radius: 15px;
+            overflow: hidden;
 
             &:hover {
                 transform: scale(1.10);
                 background: rgb(134, 10, 134);
                 color: white;
+                @include transHoverMenu
             }
 
             img {
-                width: 100%;
-                height: 370px;
+                width: 200px;
+                height: 320px;
                 object-fit: cover;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
             }
         }
     }

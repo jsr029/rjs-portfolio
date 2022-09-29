@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Typewriter from 'typewriter-effect'
+import { projets } from '../utils/presentation/projets';
 
 function Presentation() {
+  let windowpop
+    windowpop = (url, width, height) => {
+      var leftPosition, topPosition;
+      //Allow for borders.
+      leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+      //Allow for title and status bars.
+      topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+      //Open the window.
+      window.open(url, "Window2", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+    }
+
   return (
     <div className='presentation'>
       <div className="presentation_bloc">
@@ -21,34 +33,22 @@ function Presentation() {
       <div className="presentation_projets">
         <h2>Mes Projets Validés</h2>
         <div className='p-flex'>
-          <div className="presentation_projets-bloc">
-            <h3>Reservia</h3>
-            <a href="https://jean-sebastien-rakotonirina-2-29072021-g6ks-fk265omfe-jsr029.vercel.app/">
-              <img src="./images/Reservia.JPG" alt="Reservia" />
-            </a>
-          </div>
-          <div className="presentation_projets-bloc">
-            <h3>Oh My Food</h3>
-            <a href="https://rakotonirina-jean-sebsatien-3-29072021-yp9c-ppoguqbjy-jsr029.vercel.app/">
-              <img src="./images/Omyfood.JPG" alt="Oh my food" />
-            </a>
-          </div>
-          <div className="presentation_projets-bloc">
-            <h3>Game On</h3>
-            <a href="https://jsr029.github.io/RakotonirinaJeanSebastien_4_29072021/starterOnly/">
-              <img src="./images/GameOn.JPG" alt="Oh my food" />
-            </a>
-          </div>
-          <div className="presentation_projets-bloc">
-            <h3>Fisheye</h3>
-            <a href="https://rakotonirina-jean-sebastien-6-18102021-3qgz.vercel.app/">
-              <img src="./images/FishEye.JPG" alt="Oh my food" />
-            </a>
-          </div>
-          </div>
+          {projets.map((p, index) => {
+            return (
+              <div className="presentation_projets-bloc" key={index}>
+                <h3>{p.title}</h3>
+                <a href="#"
+                  onClick={() => windowpop(p.url, 1024, 600)}
+                >
+                  <img src={`${p.imgSrc}`} alt={p.title} />
+                </a>
+
+              </div>)
+          })}
         </div>
       </div>
-      )
+    </div>
+  )
 }
 
-      export default Presentation
+export default Presentation

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 //import logo from './logo.svg';
 import {
   BrowserRouter,
@@ -13,8 +13,19 @@ import Contact from './pages/Contact';
 import './styles/main.css';
 
 function App() {
+  const [anchorPoint, setAnchorPoint] = useState({ x:0, y:0 })
+  const [show, setShow] = useState(false)
+  const handleContextMenu = useCallback (
+    (event) => {
+      event.preventDefault();
+      setAnchorPoint({ x: event.pageX, y: event.pageY });
+      setShow(true);
+    },
+    [setAnchorPoint, setShow]
+  );
+
   return (
-    <div className="App">
+    <div className="App" onContextMenu={handleContextMenu}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />

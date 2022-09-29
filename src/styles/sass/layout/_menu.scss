@@ -6,7 +6,12 @@
     justify-content: space-between;
     background: rgb(134, 10, 134);
     color: white;
-
+    .logo-brand{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px 10px;
+    }
     .nav {
         max-width: 600px;
     }
@@ -14,6 +19,9 @@
     .logo {
         width: 120px;
         padding: 15px 0;
+        img{
+            border-radius: 50%;
+        }
     }
 
     ul {

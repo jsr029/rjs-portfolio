@@ -2,7 +2,9 @@ import React from 'react'
 
 function Logo() {
   return (
-    <div className='logo'>Logo</div>
+    <div className='logo'>
+      <img src="./images/Logo.jpg" alt="" />
+    </div>
   )
 }
 
