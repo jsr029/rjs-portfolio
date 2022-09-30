@@ -6,7 +6,7 @@ import { title } from './Home'
 function Cv() {
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{title + ', Cv'}</h1>
       <Header />
       <div className='cv'>
         <Footer />

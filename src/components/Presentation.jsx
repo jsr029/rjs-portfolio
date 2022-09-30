@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Typewriter from 'typewriter-effect'
 import { projets } from '../utils/presentation/projets';
 
@@ -37,11 +37,11 @@ function Presentation() {
             return (
               <div className="presentation_projets-bloc" key={index}>
                 <h3>{p.title}</h3>
-                <a href="#"
+                <button
                   onClick={() => windowpop(p.url, 1024, 600)}
                 >
                   <img src={`${p.imgSrc}`} alt={p.title} />
-                </a>
+                </button>
 
               </div>)
           })}

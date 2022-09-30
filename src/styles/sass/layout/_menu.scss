@@ -6,6 +6,16 @@
     justify-content: space-between;
     background: rgb(134, 10, 134);
     color: white;
+    li > a {
+        box-shadow: 5px 10px 15px rgb(73, 5, 73);
+    }
+    li.active > a{
+        background: darken( #aaafff, 10%);
+        color: white;
+        transform: scale(1.05);
+        color:  darken(rgb(134, 10, 134), 10%);
+        font-weight: bolder;
+    }
     .logo-brand{
         display: flex;
         flex-direction: column;

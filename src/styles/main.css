@@ -105,6 +105,16 @@ a {
   background: rgb(134, 10, 134);
   color: white;
 }
+.header li > a {
+  box-shadow: 5px 10px 15px rgb(73, 5, 73);
+}
+.header li.active > a {
+  background: #777fff;
+  color: white;
+  transform: scale(1.05);
+  color: #570657;
+  font-weight: bolder;
+}
 .header .logo-brand {
   display: flex;
   flex-direction: column;
@@ -196,12 +206,15 @@ a {
 }
 .presentation_projets-bloc {
   width: 200px;
-  height: 380px;
+  height: 365px;
   border: 1px solid rgb(134, 10, 134);
-  padding: 5px;
   margin: 10px;
   border-radius: 15px;
   overflow: hidden;
+  background: transparent;
+}
+.presentation_projets-bloc h3 {
+  padding-left: 5px;
 }
 .presentation_projets-bloc:hover {
   transform: scale(1.1);
@@ -211,9 +224,16 @@ a {
   transition-duration: 1s;
   transition-timing-function: ease;
 }
+.presentation_projets-bloc button {
+  width: 190px;
+  height: 300px;
+  padding: 0 5px 5px 5px;
+  background: transparent;
+  border: none;
+}
 .presentation_projets-bloc img {
-  width: 200px;
-  height: 320px;
+  width: 190px;
+  height: 300px;
   object-fit: cover;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
