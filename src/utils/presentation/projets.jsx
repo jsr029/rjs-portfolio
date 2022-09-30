@@ -27,12 +27,12 @@ export const projets = [
         id:5,
         title: "Les petits pltas",
         url: "https://rakotonirina-jean-sebastien-7-18122021-version2-0.vercel.app/",
-        imgSrc: "./images/PetitsPlats.jpg"
+        imgSrc: "./images/PetitsPlats.JPG"
     },
     {
         id:6, 
         title: "HRnet",
         url: "https://rakotonirina-jean-sebastien-p14-hrnet-06092022-adpx.vercel.app/",
-        imgSrc: "./images/Hrnet.jpg"
+        imgSrc: "./images/Hrnet.JPG"
     }
 ]
