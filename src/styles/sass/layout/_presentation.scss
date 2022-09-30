@@ -6,9 +6,16 @@
 
     &_bloc {
         text-align: justify;
-        p{
+
+        p {
             background: darken(yellow, 10%);
             padding: 15px 5px;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        h2 {
+            font-size: 16px;
         }
     }
 
@@ -47,22 +54,26 @@
             border-radius: 15px;
             overflow: hidden;
             background: transparent;
-            h3{
+
+            h3 {
                 padding-left: 5px;
             }
+
             &:hover {
                 transform: scale(1.10);
                 background: rgb(134, 10, 134);
                 color: white;
                 @include transHoverMenu
             }
-            button{
+
+            button {
                 width: 190px;
                 height: 300px;
                 padding: 0 5px 5px 5px;
                 background: transparent;
                 border: none;
             }
+
             img {
                 width: 190px;
                 height: 300px;
