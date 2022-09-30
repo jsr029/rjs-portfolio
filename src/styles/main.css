@@ -4,6 +4,10 @@ body {
   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(rgba(68, 76, 247, 0.3333333333), #444cf7);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "verdana";
