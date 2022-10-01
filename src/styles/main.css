@@ -103,6 +103,7 @@ a {
 
 .header {
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -128,6 +129,42 @@ a {
 }
 .header .nav {
   max-width: 600px;
+}
+@media screen and (min-width: 760px) and (max-width: 2000px) {
+  .header .nav .iconMenu {
+    display: none;
+  }
+  .header .nav ul {
+    display: flex;
+  }
+}
+@media screen and (max-width: 760px) {
+  .header .nav .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .header .nav .iconMenu {
+    display: block;
+  }
+  .header .nav ul.navMenu {
+    display: none;
+  }
+  .header .nav .navMenu.open {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .nav ul {
+    margin-right: 10px;
+  }
+  .header .nav li {
+    width: 117px;
+    margin: 5px;
+  }
+  .header .nav a {
+    display: block;
+    width: 117px;
+  }
 }
 .header .logo {
   width: 120px;

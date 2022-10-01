@@ -1,4 +1,5 @@
-import React from 'react'
+import { current } from '@reduxjs/toolkit';
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Logo from './Logo'
 
@@ -11,14 +12,27 @@ function Menu() {
 
     //Javascript split method to get the name of the path in array
     const splitLocation = pathname.split("/");
+
+    const [menu, setMenu] = useState(false)
+
+    const handleMenu = () => {
+        setMenu(!menu)
+    }
+    console.log(menu)
     return (
         <>
             <div className="logo-brand">
                 <Logo />
                 <span>"Rester fluide, ouvert et prudent"</span>
             </div>
-            <nav className='nav'>
-                <ul>
+            <nav className="nav">
+            <span
+                    className="iconMenu"
+                    onClick={()=>handleMenu()}
+                >
+                    <img src="./images/iconMenu.png" alt="Menu Responsive" />
+                </span>
+                <ul className={menu ? 'navMenu close' : 'navMenu open'}>
                     <li className={splitLocation[1] === "" ? "active" : ""}>
                         <Link to={'/'}>Accueil</Link>
                     </li>

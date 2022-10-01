@@ -1,35 +1,85 @@
 .header {
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     background: rgb(134, 10, 134);
     color: white;
-    li > a {
+
+    li>a {
         box-shadow: 5px 10px 15px rgb(73, 5, 73);
     }
-    li.active > a{
-        background: darken( #aaafff, 10%);
+
+    li.active>a {
+        background: darken(#aaafff, 10%);
         color: white;
         transform: scale(1.05);
-        color:  darken(rgb(134, 10, 134), 10%);
+        color: darken(rgb(134, 10, 134), 10%);
         font-weight: bolder;
     }
-    .logo-brand{
+
+    .logo-brand {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: 5px 10px;
     }
+
     .nav {
         max-width: 600px;
+
+        @media screen and (min-width:760px) and (max-width: 2000px) {
+            .iconMenu {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width:760px) {
+            .nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .iconMenu {
+                display: block;
+            }
+
+            ul.navMenu {
+                display: none;
+            }
+
+            .navMenu.open {
+                display: flex;
+                flex-direction: column;
+            }
+            ul{
+                margin-right: 10px;
+            }
+            li{
+                width: 117px;
+                margin: 5px;
+            }
+            a{
+                display: block;
+                width: 117px;
+            }
+
+        }
+
     }
 
     .logo {
         width: 120px;
         padding: 15px 0;
-        img{
+
+        img {
             border-radius: 50%;
         }
     }
