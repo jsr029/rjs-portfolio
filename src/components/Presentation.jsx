@@ -38,9 +38,9 @@ function Presentation() {
               <div className="presentation_projets-bloc" key={index}>
                 <h3>{p.title}</h3>
                 <button
-                  onClick={() => windowpop(p.url, 1024, 600)}
+                  onClick={() => {p.url !=="#" ? windowpop(p.url, 1024, 600) :  alert("Ce projet n'est pas visible, nécessite un backend.")} }
                 >
-                  <img src={`${p.imgSrc}`} alt={p.title} />
+                  {p.imgSrc ? <img src={`${p.imgSrc}`} alt={p.title} /> : ''} 
                 </button>
 
               </div>)
