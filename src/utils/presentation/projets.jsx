@@ -39,6 +39,6 @@ export const projets = [
         id:7,
         title: "Billed",
         url: "#",
-        imgSrc: "./images/billed.JPG"
+        imgSrc: "./images/Billed.JPG"
     }
 ]
