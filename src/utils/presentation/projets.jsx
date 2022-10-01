@@ -46,5 +46,17 @@ export const projets = [
         title: "Argent Bank",
         url: "#",
         imgSrc: "./images/ArgentBank.JPG"
+    },
+    {
+        id:9,
+        title: "Tableau de bord",
+        url: "https://jsr029.github.io/Rakotonirina_JeanSebastien_12_01062022/",
+        imgSrc: "./images/Analytics.JPG"
+    },
+    {
+        id:10,
+        title: "Kasa",
+        url: "https://jsr029.github.io/Rakotonirina_JeanSebastien_11_25042022/",
+        imgSrc: "./images/kasa.JPG"
     }
 ]
