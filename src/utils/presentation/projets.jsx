@@ -34,5 +34,11 @@ export const projets = [
         title: "HRnet",
         url: "https://rakotonirina-jean-sebastien-p14-hrnet-06092022-adpx.vercel.app/",
         imgSrc: "./images/Hrnet.JPG"
+    },
+    {
+        id:7,
+        title: "Billed",
+        url: "#",
+        imgSrc: "./images/billed.JPG"
     }
 ]
