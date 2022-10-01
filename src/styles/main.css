@@ -146,6 +146,9 @@ a {
   }
   .header .nav .iconMenu {
     display: block;
+    width: 137px;
+    text-align: center;
+    margin-right: 5px;
   }
   .header .nav ul.navMenu {
     display: none;
@@ -225,7 +228,7 @@ a {
 }
 @media screen and (max-width: 400px) {
   .presentation h2 {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .presentation h2 {
