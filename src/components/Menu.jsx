@@ -18,7 +18,6 @@ function Menu() {
     const handleMenu = () => {
         setMenu(!menu)
     }
-    console.log(menu)
     return (
         <>
             <div className="logo-brand">
