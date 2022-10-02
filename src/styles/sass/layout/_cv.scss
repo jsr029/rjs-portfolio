@@ -1,0 +1,63 @@
+.cv{
+    &-skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h2{
+            margin: 20px 0 0 0;
+        }
+    }
+    &-skills-bloc{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 5px;
+        padding: 5px;
+    }
+    margin: 5px;
+    &_header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &_objectif{
+        &-bloc{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px;
+        }
+        &-text{
+            text-align: justify;
+            margin: 0 5px;
+            padding:  5px;
+        }
+        &-title{
+            padding: 0 5px;
+            color: white;
+        }
+        &-name{
+            text-align: left;
+            background: darken(#aaafff, 10%);
+            padding: 5px;
+            color: white;
+        }
+    }
+    &_skills{
+        &-bloc{
+            width: 300px;
+            margin: 5px;
+            padding: 5px;
+            text-align: left;
+            ul{
+                list-style-type: circle;
+            }
+            h2{
+                margin: 0 20px;
+            }
+        }
+    }
+}
