@@ -391,6 +391,11 @@ a {
   margin-bottom: 0;
   color: #777fff;
 }
+@media screen and (max-width: 425px) {
+  .cv_xperiences-bloc {
+    padding: 0 10px !important;
+  }
+}
 .cv_xperiences-bloc {
   width: 100%;
   display: flex;
@@ -403,7 +408,7 @@ a {
 }
 @media screen and (max-width: 425px) {
   .cv_xperiences-bloc--details {
-    height: 350px !important;
+    height: 290px !important;
   }
 }
 .cv_xperiences-bloc--details {

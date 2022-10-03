@@ -191,7 +191,7 @@ export const cv = [
                 lieu: "Télémécanique",
                 jobLocation: "Evreux",
                 descriptions: [
-                    "Contrôler visuellement, mécaniquement et électriquement",
+                    "Contrôler visuellement, mécaniquement et électriquement un contacteur",
                     "Utiliser les outils : Ampèremetre, Voltmètre et Oscilloscope",
                     "Suivre le Book des procédures",
                     "Etablir un Procès-Verbal en fonction des résultats des tests",

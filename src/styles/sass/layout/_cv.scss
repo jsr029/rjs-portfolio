@@ -124,7 +124,11 @@
             margin-bottom: 0;
             color: darken(#aaafff, 10%);
         }
-
+        @media screen and (max-width:425px) {
+            &-bloc{
+                padding: 0 10px !important;
+            }
+        }
         &-bloc {
             width: 100%;
             display: flex;
@@ -137,7 +141,7 @@
 
             @media screen and (max-width:425px) {
                 &--details {
-                    height: 350px !important;
+                    height: 290px !important;
                 }
             }
 
