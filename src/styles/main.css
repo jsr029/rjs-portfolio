@@ -356,7 +356,7 @@ a {
 }
 @media screen and (max-width: 425px) {
   .cv_skills-bloc {
-    height: 420px;
+    height: 420px !important;
   }
 }
 .cv_skills-bloc {
@@ -377,9 +377,60 @@ a {
   margin: 0 20px;
 }
 .cv_xperiences {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 10px;
+  column-gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+.cv_xperiences h2 {
+  margin-bottom: 0;
+  color: #777fff;
+}
+.cv_xperiences-bloc {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+  column-gap: 10px;
+  align-items: center;
+  padding: 0 35px;
+}
+@media screen and (max-width: 425px) {
+  .cv_xperiences-bloc--details {
+    height: 300px !important;
+  }
+}
+.cv_xperiences-bloc--details {
+  width: 370px;
+  height: 220px;
+  padding: 0 15px;
+  border: 1px solid rgb(134, 10, 134);
+  border-radius: 15px;
+}
+.cv_xperiences-bloc--details:hover {
+  transform: rotateX(360deg);
+  transition: transform 4s ease-in-out;
+}
+.cv_xperiences-bloc--details h2,
+.cv_xperiences-bloc--details p {
+  font-size: 18px;
+  margin: 0;
+}
+.cv_xperiences-bloc--details p:nth-child(4) {
+  color: grey;
+  font-style: normal;
+}
+.cv_xperiences-bloc--details ul {
+  font-size: 14px;
+  text-align: left;
+  list-style-type: circle;
+  margin: 5px 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

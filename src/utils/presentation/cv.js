@@ -111,6 +111,7 @@ export const cv = [
                 lieu: "Dunkerque",
                 jobLocation: "Affable59",
                 descriptions: [
+                    "Bénévolat",
                     "Mettre en place le site web",
                     "Créer une application windows via Filemaker Pro",
                     "Mettre en place Filemaker Server",
@@ -127,11 +128,74 @@ export const cv = [
                 lieu: "Dunkerque",
                 jobLocation: "Odea-Amcala",
                 descriptions: [
+                    "CDD 3 mois par an",
                     "Fonte et refonte site web, wordpress et cakephp",
                     "Etablir des documents de cahier des charges et d'utilisation",
                     "Gérer l'hébergement 1&1",
                     "Créer la base de données Sql dans PhpMyAdmin",
                     "Téléverser les fichiers via FileZilla client en Ftp"
+                ]
+            },
+            {
+                id:3,
+                title: "Expériences Professionelles",
+                jobTitle: "De Manutentionnaire à Responsable Adjoint de Magasin",
+                startDate: "1996",
+                endDate: "2012",
+                lieu: "Evreux, Le Havre, Orgeval",
+                jobLocation: "Mondial Moquette",
+                descriptions: [
+                    "CDI",
+                    "Accueillir la Clientèle",
+                    "Mettre en rayon",
+                    "Ecrire la PLV",
+                    "Gérer les commandes, le stock, le SAV, le personnel"
+                ]
+            },
+            {
+                id:4,
+                title: "Expériences Professionelles",
+                jobTitle: "Secrétaire et Conducteur du CDC",
+                startDate: "1994",
+                endDate: "1995",
+                lieu: "Mourmelon le Grand",
+                jobLocation: "Armée de Terre",
+                descriptions: [
+                    "Service National, 10 mois",
+                    "Accueillir les contingents",
+                    "Effectuer les tâches administratives",
+                    "Conduire le CDC lors des déplacements"
+                ]
+            },
+            {
+                id:5,
+                title: "Expériences Professionelles",
+                jobTitle: "Convoyeur de véhicules",
+                startDate: "1991",
+                endDate: "1994",
+                lieu: "Hertz",
+                jobLocation: "Evreux",
+                descriptions: [
+                    "Contrat à la carte Etudiant",
+                    "Accueillir les contingents",
+                    "Effectuer les tâches administratives",
+                    "Conduire le CDC lors des déplacements"
+                ]
+            },
+            {
+                id:6,
+                title: "Expériences Professionelles",
+                jobTitle: "Controleur Qualité",
+                startDate: "1990",
+                endDate: "1991",
+                lieu: "Télémécanique",
+                jobLocation: "Evreux",
+                descriptions: [
+                    "Contrôler visuellement, mécaniquement et électriquement",
+                    "Utiliser les outils : Ampèremetre, Voltmètre et Oscilloscope",
+                    "Suivre le Book des procédures",
+                    "Etablir un Procès-Verbal en fonction des résultats des tests",
+                    "Tester l'étanchéité via le test de claquage"
                 ]
             }
         ]
