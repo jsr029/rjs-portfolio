@@ -5,7 +5,7 @@ import { cv } from '../utils/presentation/cv'
 import { title } from './Home'
 
 function Cv() {
-  document.title =  title + ", Cv"
+  document.title = title + ", Cv"
   return (
     <>
       <h1>{title + ', Cv'}</h1>
@@ -58,21 +58,25 @@ function Cv() {
                 })}
               </div>
             </div>
-            <div className="cv-xperiences">
+            <div className="cv_xperiences">
               <h2>Experiences Professionnelles</h2>
-              <div className="cv_xperiences-bloc">
-                <h2>Developpeur d'Applications</h2>
-                <p>Dunkerque</p>
-                <p>2016 - 2018</p>
-                <ul>
-                  <li>Analyser les besoins du client</li>
-                  <li>Réaliser des maquettes</li>
-                  <li>Concevoir et développer les programmes</li>
-                  <li>Analyser les problèmes techniques</li>
-                  <li>Déterminer les mesures correctives</li>
-                  <li>Réaliser les supports techniques</li>
-                </ul>
-              </div>
+              {c.xperiences.map((x, inde) => {
+                return (
+                  <div className="cv_xperiences-bloc" key={inde}>
+                    <h2>{x.jobTitle}</h2>
+                    <p>{x.startDate + ' - ' + x.endDate}</p>
+                    <p>{x.lieu}</p>
+                    <p>{x.jobLocation}</p>
+                    <ul>
+                      {x.descriptions.map((d, di) => {
+                        return (
+                          <li key={di}>{d}</li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                )
+              })}
             </div>
           </div>
         )

@@ -100,6 +100,24 @@ export const cv = [
                     "Créer des composants React..."
                 ]
             }
+        ],
+        xperiences: [
+            {
+                id:1,
+                title: "Expériences Professionelles",
+                jobTitle: "Développeur d'Applications web et windows",
+                startDate: "2016",
+                endDate: "2018",
+                lieu: "Dunkerque",
+                jobLocation: "Affable59",
+                descriptions: [
+                    "Mettre en place le site web",
+                    "Créer une application windows via Filemaker Pro",
+                    "Mettre en place Filemaker Server",
+                    "Créer un VPN via Freebox",
+                    "Définir le niveau d'accès de chaque Administré"
+                ]
+            }
         ]
     }
 ]

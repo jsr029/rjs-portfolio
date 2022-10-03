@@ -354,6 +354,11 @@ a {
   background: rgb(134, 10, 134);
   color: white;
 }
+@media screen and (max-width: 425px) {
+  .cv_skills-bloc {
+    height: 420px;
+  }
+}
 .cv_skills-bloc {
   height: 355px;
   text-align: left;
@@ -370,6 +375,11 @@ a {
 }
 .cv_skills-bloc h2 {
   margin: 0 20px;
+}
+.cv_xperiences {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */
