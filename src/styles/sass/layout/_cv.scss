@@ -179,17 +179,44 @@
             }
         }
     }
-    &_formations{
+
+    &_formations {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        &-bloc{
+
+        h2 {
+            color: darken(#aaafff, 10%);
+        }
+
+        &-bloc {
+            width: 1000px;
+            margin-top: 20px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            row-gap: 10px;
+
+            &--details {
+                width: 300px;
+                height: 240px;
+                border: 1px dashed rgb(134, 10, 134);
+                padding: 5px;
+                border-radius: 15px;
+                h2:hover{
+                    transform: rotateX(360deg);
+                    transition: transform 3s ease-in-out;
+                }
+                &:hover{
+                    border: 2px solid rgb(134, 10, 134);
+                }
+                p {
+                    margin: 0;
+                }
+            }
         }
     }
 }

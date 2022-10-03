@@ -443,12 +443,35 @@ a {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+.cv_formations h2 {
+  color: #777fff;
+}
 .cv_formations-bloc {
+  width: 1000px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  row-gap: 10px;
+}
+.cv_formations-bloc--details {
+  width: 300px;
+  height: 240px;
+  border: 1px dashed rgb(134, 10, 134);
+  padding: 5px;
+  border-radius: 15px;
+}
+.cv_formations-bloc--details h2:hover {
+  transform: rotateX(360deg);
+  transition: transform 3s ease-in-out;
+}
+.cv_formations-bloc--details:hover {
+  border: 2px solid rgb(134, 10, 134);
+}
+.cv_formations-bloc--details p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
