@@ -82,6 +82,23 @@ export const cv = [
                     "Mettre en place les procédures techniques, d'utilisation et de sécurité des équipements informatiques",
                     "Gérer les droits d'accès des utilisateurs"
                 ]
+            },
+            {
+                id: 6,
+                title: "Compétences",
+                subtitle: "OpenClassRooms",
+                items: [
+                    "Intégrer du contenu conformément à une maquette",
+                    "Implémenter une interface responsive",
+                    "Programmer en Javascript",
+                    "Analyser un problème informatique",
+                    "Développer un algorithme pour résoudre un problème",
+                    "Ecrire des test unitaires et d'intégration avec javascript",
+                    "Rédiger un plan de test end-to-end manuel",
+                    "Développer les routes d'une application web avec React Router",
+                    "Initialiser une application web avec un framework",
+                    "Créer des composants React..."
+                ]
             }
         ]
     }

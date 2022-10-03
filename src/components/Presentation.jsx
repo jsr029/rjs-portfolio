@@ -4,16 +4,15 @@ import { projets } from '../utils/presentation/projets';
 
 function Presentation() {
   let windowpop
-    windowpop = (url, width, height) => {
-      var leftPosition, topPosition;
-      //Allow for borders.
-      leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
-      //Allow for title and status bars.
-      topPosition = (window.screen.height / 2) - ((height / 2) + 50);
-      //Open the window.
-      window.open(url, "Window2", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
-    }
-
+  windowpop = (url, width, height) => {
+    var leftPosition, topPosition;
+    //Allow for borders.
+    leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+    //Allow for title and status bars.
+    topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+    //Open the window.
+    window.open(url, "Window2", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+  }
   return (
     <div className='presentation'>
       <div className="presentation_bloc">
@@ -38,9 +37,9 @@ function Presentation() {
               <div className="presentation_projets-bloc" key={index}>
                 <h3>{p.title}</h3>
                 <button
-                  onClick={() => {p.url !=="#" ? windowpop(p.url, 1024, 600) :  alert("Ce projet n'est pas visible, nécessite un backend.")} }
+                  onClick={() => { p.url !== "#" ? windowpop(p.url, 1024, 600) : alert("Ce projet n'est pas visible, nécessite un backend.") }}
                 >
-                  {p.imgSrc ? <img src={`${p.imgSrc}`} alt={p.title} /> : ''} 
+                  {p.imgSrc ? <img src={`${p.imgSrc}`} alt={p.title} /> : ''}
                 </button>
 
               </div>)

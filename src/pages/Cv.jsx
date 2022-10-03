@@ -5,7 +5,7 @@ import { cv } from '../utils/presentation/cv'
 import { title } from './Home'
 
 function Cv() {
-  console.log(cv)
+  document.title =  title + ", Cv"
   return (
     <>
       <h1>{title + ', Cv'}</h1>

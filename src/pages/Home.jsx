@@ -5,7 +5,7 @@ import Header from './Header'
 
 export const title = document.title = "R-JS | Portfolio"
 function Home() {
-    
+    document.title =  title + ", Accueil"
     return (
         <>
             <h1>{title + ', Accueil'}</h1>
