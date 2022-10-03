@@ -198,6 +198,74 @@ export const cv = [
                     "Tester l'étanchéité via le test de claquage"
                 ]
             }
+        ],
+        formations: [
+            {
+                id:1,
+                title: "Développeur d'Applications",
+                etat: "OpenClassRooms",
+                lieu:"A distance",
+                année: "2021 - 2022",
+                descriptions: [
+                    "Front-End ReactJs",
+                    "Créer une application web en Javascript"
+                ]
+            },
+            {
+                id:2,
+                title: "Conducteur de lignes",
+                etat: "IUMM",
+                lieu: "Quimper",
+                année: "2018",
+                descriptions: [
+                    "Piloter la ligne SAVONICC",
+                    "Maintenance de 1er niveau",
+                    "Connaitre les points de contrôle (HACCP)"
+                ]
+            },
+            {
+                id:3,
+                title: "Cours d'Anglais intensifs",
+                etat: "Cuepp",
+                lieu: "Dunkerque",
+                année: "2014",
+                descriptions: [
+                    "Front-End ReactJs",
+                    "Créer une application web en Javascript"
+                ]
+            },
+            ,{
+                id:4,
+                title: "Intégrateur Web",
+                etat: "Format Concept",
+                lieu: "Dunkerque",
+                année: "2013",
+                descriptions: [
+                    "Intégrer une maquette en site web",
+                    "Utiliser les langages de script Html et Css"
+                ]
+            },
+            {
+                id:5,
+                title: "Niveau DEUG A 2àme année",
+                etat: "Faculté des sciences",
+                lieu: "Evreux",
+                année: "1994",
+                descriptions: [
+                    "Sciences et Structures de la matière",
+                    "Option : Chimie 2ème année"
+                ]
+            },
+            {
+                id:5,
+                title: "BAC D",
+                etat: "Lycée Polyvalent",
+                lieu: "Evreux",
+                année: "1991",
+                descriptions: [
+                    "Sciences de la vie et de la terre"
+                ]
+            }
         ]
     }
 ]
