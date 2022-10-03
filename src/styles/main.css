@@ -437,5 +437,18 @@ a {
   list-style-type: circle;
   margin: 5px 10px;
 }
+.cv_formations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.cv_formations-bloc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */

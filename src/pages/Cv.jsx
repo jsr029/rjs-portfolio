@@ -80,6 +80,28 @@ function Cv() {
                 })}
               </div>
             </div>
+            <div className="cv_formations">
+              <h2>Formations</h2>
+              <div className="cv_formations-bloc">
+                {c.formations.map((f,i)=>{
+                  return(
+                    <div className="cv_formations-bloc--details" key={i}>
+                        <h2>{f.title}</h2>
+                        <p>{f.etat}</p>
+                        <p>{f.lieu}</p>
+                        <p>{f.année}</p>
+                        <ul>
+                          {f.descriptions.map((d, index)=>{
+                            return(
+                              <li key={index}>{d}</li>
+                            )
+                          })}
+                        </ul>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
           </div>
         )
       })}
