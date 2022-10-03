@@ -117,6 +117,22 @@ export const cv = [
                     "Créer un VPN via Freebox",
                     "Définir le niveau d'accès de chaque Administré"
                 ]
+            },
+            {
+                id:2,
+                title: "Expériences Professionelles",
+                jobTitle: "Développeur FullStack",
+                startDate: "2014",
+                endDate: "2016",
+                lieu: "Dunkerque",
+                jobLocation: "Odea-Amcala",
+                descriptions: [
+                    "Fonte et refonte site web, wordpress et cakephp",
+                    "Etablir des documents de cahier des charges et d'utilisation",
+                    "Gérer l'hébergement 1&1",
+                    "Créer la base de données Sql dans PhpMyAdmin",
+                    "Téléverser les fichiers via FileZilla client en Ftp"
+                ]
             }
         ]
     }

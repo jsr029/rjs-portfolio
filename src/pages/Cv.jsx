@@ -60,23 +60,25 @@ function Cv() {
             </div>
             <div className="cv_xperiences">
               <h2>Experiences Professionnelles</h2>
-              {c.xperiences.map((x, inde) => {
-                return (
-                  <div className="cv_xperiences-bloc" key={inde}>
-                    <h2>{x.jobTitle}</h2>
-                    <p>{x.startDate + ' - ' + x.endDate}</p>
-                    <p>{x.lieu}</p>
-                    <p>{x.jobLocation}</p>
-                    <ul>
-                      {x.descriptions.map((d, di) => {
-                        return (
-                          <li key={di}>{d}</li>
-                        )
-                      })}
-                    </ul>
-                  </div>
-                )
-              })}
+              <div className="cv_xperiences-bloc">
+                {c.xperiences.map((x, inde) => {
+                  return (
+                    <div className="cv_xperiences-bloc--details" key={inde}>
+                      <h2>{x.jobTitle}</h2>
+                      <p>{x.startDate + ' - ' + x.endDate}</p>
+                      <p>{x.lieu}</p>
+                      <p>{x.jobLocation}</p>
+                      <ul>
+                        {x.descriptions.map((d, di) => {
+                          return (
+                            <li key={di}>{d}</li>
+                          )
+                        })}
+                      </ul>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
         )
