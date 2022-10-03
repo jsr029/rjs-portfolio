@@ -14,7 +14,7 @@ export const cv = [
             name: "JEAN-SEBASTIEN RAKOTONIRINA",
             text: "Autodidacte passionné et motivé, issu d'un niveau BAC+2 en chimie et " +
                 "fraichement sorti d'une formation de Développeur d'Applications Front-End ReactJs, " +
-                "je suis à la recherche d'un poste de Déveeloppeur dans le domaine du web, idéalement 100% à distance."
+                "je suis à la recherche d'un poste de Développeur dans le domaine du web, idéalement 100% à distance."
         },
         competences: [
             {

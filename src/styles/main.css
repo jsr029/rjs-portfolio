@@ -403,7 +403,7 @@ a {
 }
 @media screen and (max-width: 425px) {
   .cv_xperiences-bloc--details {
-    height: 300px !important;
+    height: 350px !important;
   }
 }
 .cv_xperiences-bloc--details {
