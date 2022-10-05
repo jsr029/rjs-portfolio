@@ -247,7 +247,7 @@ export const cv = [
             },
             {
                 id:5,
-                title: "Niveau DEUG A 2àme année",
+                title: "Niveau DEUG A 2ième année",
                 etat: "Faculté des sciences",
                 lieu: "Evreux",
                 année: "1994",
